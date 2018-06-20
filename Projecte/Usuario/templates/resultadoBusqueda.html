@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado de la busqueda</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    {% if msg == "ok" %}
+        <h1>Resultados a la búsqueda de {{ tipo }} con calidad {{ calidad }} y valoración igual o superior a {{ valMin }}</h1>
+        {% if list %}
+            <table>
+                <tbody>
+                    <tr>
+                        <td><b>Tipo</b></td>
+                        <td><b>Precio</b></td>
+                        <td><b>Calidad</b></td>
+                        <td><b>Descripción</b></td>
+                        <td><b>Nombre</b></td>
+                        <td><b>Código</b></td>
+                        <td><b>Valoración</b></td>
+                    </tr>
+                    {% for elem in list %}
+                    <tr>
+                        {% for key,value in elem.items() %}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                        <td><a href="/anadirCarrito?redirect=buscarProductos&tipo={{ tipo }}&calidad={{ calidad }}&valMin={{ valMin }}&codigo={{elem['codigo']}}">Añadir al carrito</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <h2>No hay elementos en la lista</h2>
+        {% endif %}
+    {% else %}
+        <h1>Mensaje Incorrecto</h1>
+    {% endif %}
+    <ul>
+        <li>
+            <a href="/">Ir a la página principal</a>
+        </li>
+        <li>
+            <a href="/buscar">Realizar otra búsqueda</a>
+        </li>
+        <li>
+            <a href="/verCarrito">Ver carrito</a>
+        </li>
+    </ul>
+</body>
+</html>
+
+
+
+<body>
+
+</body>

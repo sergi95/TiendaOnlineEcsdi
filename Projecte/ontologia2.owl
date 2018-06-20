@@ -1,0 +1,728 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#asignado_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#asignado_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#BultoEnvio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#CentroLogistico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#asociada_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#asociada_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionClientePago"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Devolucion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#compuesto_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#compuesto_de">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Pedido"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Bulto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#compuesto_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#compuesto_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Bulto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoNuevo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#contiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#contiene">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Lote"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#BultoEnvio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#corresponde_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#corresponde_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionClienteCobro"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionVendedor3o"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Pedido"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#devuelto_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#devuelto_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoDevuelto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Cliente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#dispone_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#dispone_de">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#CentroLogistico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjenoEnvio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoPropio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#es_para -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#es_para">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Recomendacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Cliente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#formado_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#formado_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Catalogo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoNuevo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#hecho_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#hecho_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Feedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Cliente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#pertenece_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#pertenece_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#FacturaDefinitiva"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#FacturaPrevia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Pedido"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#realizada_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#realizada_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Busqueda"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Devolucion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Pedido"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Cliente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#sobre_un -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#sobre_un">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Feedback"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoNuevo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#tiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#tiene">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#CentroLogistico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Lote"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#transportado_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#transportado_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Lote"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transportista"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#vendido_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#vendido_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjeno"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Vendedor3o"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#vinculada_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#vinculada_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionTransportista"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Lote"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#codigo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#codigo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Bulto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Busqueda"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Devolucion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Feedback"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Lote"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Pedido"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Recomendacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transaccion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#content -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#content"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#decision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#decision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Devolucion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#descripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#descripcion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#estado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#estado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Bulto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Devolucion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Lote"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Pedido"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transaccion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#fechaEntrega -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#fechaEntrega">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Lote"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Pedido"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#localizacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#localizacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#CentroLogistico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Actor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#CentroLogistico"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#numeroTarjeta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#numeroTarjeta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Cliente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#parametrosBusqueda -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#parametrosBusqueda">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Busqueda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#precio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#precio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#telefono -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#telefono">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#tipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#tipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#valoracion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#valoracion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Feedback"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Actor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Banco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Banco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Bulto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Bulto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#BultoEnvio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#BultoEnvio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Bulto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#BultoNoEnvio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#BultoNoEnvio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Bulto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Busqueda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Busqueda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Catalogo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Catalogo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#CentroLogistico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#CentroLogistico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Cliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Cliente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Devolucion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Devolucion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#FacturaDefinitiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#FacturaDefinitiva"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#FacturaPrevia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#FacturaPrevia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Feedback -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Feedback"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Lote -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Lote"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Pedido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Pedido"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjeno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjeno">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoNuevo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjenoEnvio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjenoEnvio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjeno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjenoNoEnvio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjenoNoEnvio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoAjeno"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoDevuelto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoDevuelto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoNuevo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoNuevo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoPropio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoPropio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#ProductoNuevo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Recomendacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Recomendacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transaccion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transaccion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionCliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionCliente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transaccion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionClienteCobro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionClienteCobro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionCliente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionClientePago -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionClientePago">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionCliente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionTransportista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionTransportista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transaccion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionVendedor3o -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#TransaccionVendedor3o">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transaccion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transportista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Transportista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Vendedor3o -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Vendedor3o">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#accept-proposal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#accept-proposal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#agree -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#agree"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#cancel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#cancel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#cfp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#cfp"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#confirm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#confirm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#disconfirm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#disconfirm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#failure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#failure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#inform -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#inform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#inform-if -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#inform-if"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#inform-ref -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#inform-ref"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#not-understood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#not-understood"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#propagate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#propagate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#propose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#propose"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#proxy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#proxy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#query-if -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#query-if"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#query-ref -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#query-ref"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#refuse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#refuse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#reject-proposal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#reject-proposal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#request -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#request"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#request-when -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#request-when"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#request-whenever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#request-whenever"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#subscribe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#subscribe"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

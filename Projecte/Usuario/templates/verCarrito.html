@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tu carrito</h1>
+    <h3>Datos de compra:</h3>
+    <form action="/realizarPedido" method="POST">
+        <p>Nombre:</p>
+		<input type="text" name="nombre"/>
+		<p>Email:</p>
+		<input type="text" name="email"/>
+        <p>Ciudad:</p>
+		<input type="text" name="ciudad"/>
+        <p>Dirección:</p>
+		<input type="text" name="direccion"/>
+        <p>Tarjeta:</p>
+		<input type="text" name="tarjeta"/>
+        <p>Urgencia:</p>
+        <select name="urgencia">
+            <option value="1" selected>En un 1 día</option>
+            <option value="2">De 3 a 5 días</option>
+            <option value="3">Cuando llegue</option>
+        </select>
+		<button type="submit">Realizar pedido</button>
+	</form>
+    &nbsp;
+    &nbsp;
+    {% if list %}
+        <h3>Lista de productos:</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td><b>Tipo</b></td>
+                    <td><b>Precio</b></td>
+                    <td><b>Calidad</b></td>
+                    <td><b>Descripción</b></td>
+                    <td><b>Nombre</b></td>
+                    <td><b>Código</b></td>
+                    <td><b>Valoración</b></td>
+                </tr>
+                {% for elem in list %}
+                <tr>
+                    {% for key,value in elem.items() %}
+                        <td>{{ value }}</td>
+                    {% endfor %}
+                    <td><a href="/eliminarProductoCarrito?codigo={{elem['codigo']}}">Eliminar del carrito</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <ul>
+		    <li>
+			    <a href="/vaciarCarrito">Vaciar carrito</a>
+            </li>
+        </ul>
+    {% else %}
+        <h3>No se han introducido productos en el carrito!</h3>
+    {% endif %}
+    <ul>
+        <li>
+            <a href="/buscar">Buscar Productos</a>
+        </li>
+        <li>
+            <a href="/">Ir a la página principal</a>
+        </li>
+    </ul>
+
+</body>
+</html>

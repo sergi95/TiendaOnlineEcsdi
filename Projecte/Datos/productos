@@ -1,0 +1,897 @@
+@prefix escdi: <http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+escdi:Producto1 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 1 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "iphone" ;
+    escdi:precio 5.803251e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.237172e+00 .
+
+escdi:Producto10 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 10 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "reader" ;
+    escdi:precio 1.071213e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 4.879335e+00 .
+
+escdi:Producto11 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 11 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "calabaza" ;
+    escdi:precio 7.170679e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 2.260773e+00 .
+
+escdi:Producto12 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 12 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "zanahoria" ;
+    escdi:precio 7.44787e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 3.583943e+00 .
+
+escdi:Producto13 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 13 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "botas" ;
+    escdi:precio 1.041308e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.682628e+00 .
+
+escdi:Producto14 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 14 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "router" ;
+    escdi:precio 1.846557e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.018327e+00 .
+
+escdi:Producto15 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 15 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "camara" ;
+    escdi:precio 9.922346e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 1.529813e+00 .
+
+escdi:Producto16 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 16 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "altavoz" ;
+    escdi:precio 2.691614e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.75135e+00 .
+
+escdi:Producto17 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 17 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "botas" ;
+    escdi:precio 6.085903e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.169799e+00 .
+
+escdi:Producto18 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 18 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "despertados" ;
+    escdi:precio 1.048754e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.911044e+00 .
+
+escdi:Producto19 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 19 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "botas" ;
+    escdi:precio 1.430728e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.716867e+00 .
+
+escdi:Producto2 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 2 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "zuecos" ;
+    escdi:precio 8.517449e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.71462e+00 .
+
+escdi:Producto20 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 20 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "zapatos" ;
+    escdi:precio 9.644756e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.638183e+00 .
+
+escdi:Producto21 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 21 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "rabano" ;
+    escdi:precio 1.168246e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 4.25014e+00 .
+
+escdi:Producto22 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 22 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "pepino" ;
+    escdi:precio 1.19286e+01 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 1.309903e+00 .
+
+escdi:Producto23 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 23 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "reader" ;
+    escdi:precio 6.004576e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.327964e+00 .
+
+escdi:Producto24 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 24 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "camara" ;
+    escdi:precio 3.960343e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 3.753727e+00 .
+
+escdi:Producto25 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 25 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "altavoz" ;
+    escdi:precio 1.296495e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.609808e+00 .
+
+escdi:Producto26 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 26 ;
+    escdi:descripcion "c" ;
+    escdi:nombre "auricalares" ;
+    escdi:precio 1.28905e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 3.419027e+00 .
+
+escdi:Producto27 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 27 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "lechuga" ;
+    escdi:precio 8.673789e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 1.904503e+00 .
+
+escdi:Producto28 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 28 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "sandalias" ;
+    escdi:precio 4.426661e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.393476e+00 .
+
+escdi:Producto29 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 29 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "cebolla" ;
+    escdi:precio 1.47945e+01 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 3.346296e+00 .
+
+escdi:Producto3 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 3 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "manoletinas" ;
+    escdi:precio 9.639989e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.880418e+00 .
+
+escdi:Producto30 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 30 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "altavoz" ;
+    escdi:precio 1.199829e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 3.266009e+00 .
+
+escdi:Producto31 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 31 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "chanclas" ;
+    escdi:precio 8.561777e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 2.503844e+00 .
+
+escdi:Producto32 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 32 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "botines" ;
+    escdi:precio 1.184742e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 2.691789e+00 .
+
+escdi:Producto33 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 33 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "auricalares" ;
+    escdi:precio 1.128907e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 4.33017e+00 .
+
+escdi:Producto34 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 34 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "chanclas" ;
+    escdi:precio 1.307091e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 1.417631e+00 .
+
+escdi:Producto35 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 35 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "auricalares" ;
+    escdi:precio 1.474775e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 3.323724e+00 .
+
+escdi:Producto36 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 36 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "zanahoria" ;
+    escdi:precio 2.189869e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 4.070066e+00 .
+
+escdi:Producto37 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 37 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "rabano" ;
+    escdi:precio 2.183441e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 3.366977e+00 .
+
+escdi:Producto38 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 38 ;
+    escdi:descripcion "c" ;
+    escdi:nombre "patata" ;
+    escdi:precio 7.702746e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 4.65709e+00 .
+
+escdi:Producto39 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 39 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "sandalias" ;
+    escdi:precio 6.373483e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.137511e+00 .
+
+escdi:Producto4 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 4 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "sandalias" ;
+    escdi:precio 1.054115e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.488375e+00 .
+
+escdi:Producto40 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 40 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "zuecos" ;
+    escdi:precio 1.425426e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 1.000108e+00 .
+
+escdi:Producto41 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 41 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "zanahoria" ;
+    escdi:precio 1.003022e+01 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 2.659152e+00 .
+
+escdi:Producto42 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 42 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "zuecos" ;
+    escdi:precio 1.968243e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 2.890169e+00 .
+
+escdi:Producto43 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 43 ;
+    escdi:descripcion "c" ;
+    escdi:nombre "teclado" ;
+    escdi:precio 4.355797e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 1.878779e+00 .
+
+escdi:Producto44 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 44 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "camara" ;
+    escdi:precio 1.290223e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.126165e+00 .
+
+escdi:Producto45 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 45 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "nautico" ;
+    escdi:precio 4.412661e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 2.739383e+00 .
+
+escdi:Producto46 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 46 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "videojuego" ;
+    escdi:precio 1.355602e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 4.404728e+00 .
+
+escdi:Producto47 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 47 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "pimiento" ;
+    escdi:precio 2.430084e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 1.135828e+00 .
+
+escdi:Producto48 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 48 ;
+    escdi:descripcion "h" ;
+    escdi:nombre "zanahoria" ;
+    escdi:precio 2.199637e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 4.552353e+00 .
+
+escdi:Producto49 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 49 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "despertados" ;
+    escdi:precio 1.315106e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.336699e+00 .
+
+escdi:Producto5 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 5 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "cebolla" ;
+    escdi:precio 7.282647e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 3.133753e+00 .
+
+escdi:Producto50 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 50 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "zuecos" ;
+    escdi:precio 7.340793e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.40805e+00 .
+
+escdi:Producto51 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 51 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "sandalias" ;
+    escdi:precio 8.535324e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 1.550293e+00 .
+
+escdi:Producto52 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 52 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "pepino" ;
+    escdi:precio 5.135353e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 1.151002e+00 .
+
+escdi:Producto53 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 53 ;
+    escdi:descripcion "h" ;
+    escdi:nombre "sandalias" ;
+    escdi:precio 8.56831e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.889577e+00 .
+
+escdi:Producto54 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 54 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "pepino" ;
+    escdi:precio 1.034989e+01 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 2.758387e+00 .
+
+escdi:Producto55 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 55 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "manoletinas" ;
+    escdi:precio 5.195779e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 1.076101e+00 .
+
+escdi:Producto56 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 56 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "patata" ;
+    escdi:precio 3.021063e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 3.641261e+00 .
+
+escdi:Producto57 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 57 ;
+    escdi:descripcion "c" ;
+    escdi:nombre "pimiento" ;
+    escdi:precio 6.396966e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 1.075952e+00 .
+
+escdi:Producto58 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 58 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "ajo" ;
+    escdi:precio 5.585632e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 1.645089e+00 .
+
+escdi:Producto59 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 59 ;
+    escdi:descripcion "h" ;
+    escdi:nombre "ajo" ;
+    escdi:precio 4.35737e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 4.857679e+00 .
+
+escdi:Producto6 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 6 ;
+    escdi:descripcion "c" ;
+    escdi:nombre "mocasin" ;
+    escdi:precio 4.774821e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.828694e+00 .
+
+escdi:Producto60 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 60 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "botas" ;
+    escdi:precio 1.497886e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 1.307237e+00 .
+
+escdi:Producto61 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 61 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "zapatos" ;
+    escdi:precio 4.541217e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.698822e+00 .
+
+escdi:Producto62 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 62 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "botas" ;
+    escdi:precio 8.459843e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.864444e+00 .
+
+escdi:Producto63 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 63 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "rabano" ;
+    escdi:precio 1.487939e+01 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 2.995146e+00 .
+
+escdi:Producto64 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 64 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "pepino" ;
+    escdi:precio 9.99969e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 2.260782e+00 .
+
+escdi:Producto65 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 65 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "mocasin" ;
+    escdi:precio 1.283672e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.482002e+00 .
+
+escdi:Producto66 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 66 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "zapatillas" ;
+    escdi:precio 6.104522e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 1.910995e+00 .
+
+escdi:Producto67 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 67 ;
+    escdi:descripcion "h" ;
+    escdi:nombre "iphone" ;
+    escdi:precio 1.23975e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 4.076519e+00 .
+
+escdi:Producto68 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 68 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "botas" ;
+    escdi:precio 1.454023e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.389472e+00 .
+
+escdi:Producto69 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 69 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "telefono" ;
+    escdi:precio 7.263557e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 1.611092e+00 .
+
+escdi:Producto7 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 7 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "tomate" ;
+    escdi:precio 1.375851e+01 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 2.004973e+00 .
+
+escdi:Producto70 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 70 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "zapatos" ;
+    escdi:precio 1.230524e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.252286e+00 .
+
+escdi:Producto71 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 71 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "iphone" ;
+    escdi:precio 3.626255e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 3.048066e+00 .
+
+escdi:Producto72 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 72 ;
+    escdi:descripcion "c" ;
+    escdi:nombre "botas" ;
+    escdi:precio 1.462037e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.084393e+00 .
+
+escdi:Producto73 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 73 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "chanclas" ;
+    escdi:precio 1.339812e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.820056e+00 .
+
+escdi:Producto74 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 74 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "despertados" ;
+    escdi:precio 1.050423e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 4.063044e+00 .
+
+escdi:Producto75 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 75 ;
+    escdi:descripcion "g" ;
+    escdi:nombre "iphone" ;
+    escdi:precio 1.699748e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.686329e+00 .
+
+escdi:Producto76 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 76 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "altavoz" ;
+    escdi:precio 5.886902e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 3.314341e+00 .
+
+escdi:Producto77 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 77 ;
+    escdi:descripcion "c" ;
+    escdi:nombre "altavoz" ;
+    escdi:precio 3.366245e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 4.349898e+00 .
+
+escdi:Producto78 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 78 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "despertados" ;
+    escdi:precio 1.297319e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 3.79633e+00 .
+
+escdi:Producto79 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 79 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "altavoz" ;
+    escdi:precio 1.331741e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 4.368383e+00 .
+
+escdi:Producto8 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 8 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "zanahoria" ;
+    escdi:precio 3.549592e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 4.156696e+00 .
+
+escdi:Producto80 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 80 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "telefono" ;
+    escdi:precio 1.037259e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.547977e+00 .
+
+escdi:Producto81 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 81 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "reader" ;
+    escdi:precio 8.214096e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 1.39569e+00 .
+
+escdi:Producto82 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 82 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "zapatos" ;
+    escdi:precio 5.310952e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 1.31321e+00 .
+
+escdi:Producto83 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 83 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "reader" ;
+    escdi:precio 5.407628e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 2.060826e+00 .
+
+escdi:Producto84 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 84 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "tomate" ;
+    escdi:precio 1.436689e+01 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 1.343565e+00 .
+
+escdi:Producto85 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 85 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "zapatos" ;
+    escdi:precio 9.816016e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.44553e+00 .
+
+escdi:Producto86 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 86 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "calabaza" ;
+    escdi:precio 1.106605e+01 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 1.672933e+00 .
+
+escdi:Producto87 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 87 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "camara" ;
+    escdi:precio 1.310274e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 1.040825e+00 .
+
+escdi:Producto88 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 88 ;
+    escdi:descripcion "h" ;
+    escdi:nombre "despertados" ;
+    escdi:precio 1.221813e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 3.201209e+00 .
+
+escdi:Producto89 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 89 ;
+    escdi:descripcion "c" ;
+    escdi:nombre "zanahoria" ;
+    escdi:precio 2.593002e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 2.158214e+00 .
+
+escdi:Producto9 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 9 ;
+    escdi:descripcion "h" ;
+    escdi:nombre "mocasin" ;
+    escdi:precio 1.22059e+01 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.483304e+00 .
+
+escdi:Producto90 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 90 ;
+    escdi:descripcion "h" ;
+    escdi:nombre "zanahoria" ;
+    escdi:precio 4.63974e+00 ;
+    escdi:tipo "hortalizas" ;
+    escdi:valoracion 1.636317e+00 .
+
+escdi:Producto91 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 91 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "sandalias" ;
+    escdi:precio 6.010029e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 3.185566e+00 .
+
+escdi:Producto92 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 92 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "sandalias" ;
+    escdi:precio 7.995707e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 2.126841e+00 .
+
+escdi:Producto93 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 93 ;
+    escdi:descripcion "h" ;
+    escdi:nombre "mocasin" ;
+    escdi:precio 5.903313e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 1.718635e+00 .
+
+escdi:Producto94 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 94 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "zuecos" ;
+    escdi:precio 3.356196e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.178955e+00 .
+
+escdi:Producto95 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 95 ;
+    escdi:descripcion "f" ;
+    escdi:nombre "altavoz" ;
+    escdi:precio 1.495435e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 4.84178e+00 .
+
+escdi:Producto96 a "ProductoPropio" ;
+    escdi:calidad "normal" ;
+    escdi:codigo 96 ;
+    escdi:descripcion "a" ;
+    escdi:nombre "altavoz" ;
+    escdi:precio 1.173322e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 3.133958e+00 .
+
+escdi:Producto97 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 97 ;
+    escdi:descripcion "e" ;
+    escdi:nombre "sandalias" ;
+    escdi:precio 3.665954e+00 ;
+    escdi:tipo "calzado" ;
+    escdi:valoracion 4.566623e+00 .
+
+escdi:Producto98 a "ProductoPropio" ;
+    escdi:calidad "premium" ;
+    escdi:codigo 98 ;
+    escdi:descripcion "d" ;
+    escdi:nombre "altavoz" ;
+    escdi:precio 1.198047e+01 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 1.812748e+00 .
+
+escdi:Producto99 a "ProductoPropio" ;
+    escdi:calidad "superior" ;
+    escdi:codigo 99 ;
+    escdi:descripcion "b" ;
+    escdi:nombre "telefono" ;
+    escdi:precio 6.603145e+00 ;
+    escdi:tipo "electronica" ;
+    escdi:valoracion 4.293377e+00 .
+

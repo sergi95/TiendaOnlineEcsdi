@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Busqueda de productos</title>
+</head>
+<body>
+    <h1>Búsqueda de productos</h1>
+    <ul>
+		<li>
+			<a href="/verCarrito">Ver carrito</a>
+        </li>
+    </ul>
+	<form action="/buscarProductos" method="get">
+
+        <p>Tipo:</p>
+        <select name="tipo">
+            <option value="hortalizas" selected>Hortalizas</option>
+            <option value="calzado">Calzado</option>
+            <option value="electronica">Electronica</option>
+        </select>
+
+        <p>Calidad:</p>
+        <select name="calidad">
+            <option value="normal" selected>Normal</option>
+            <option value="superior">Superior</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <p>Valoración Mínima:</p>
+        <select name="valMin">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+		<button type="submit">Realizar búsqueda</button>
+	</form>
+</body>
+</html>
