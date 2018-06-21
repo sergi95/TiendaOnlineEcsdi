@@ -67,40 +67,64 @@ def comunicacion():
             if 'content' in msgdic:
                 content = msgdic['content']
                 if 'obtenerFacturasPrevias' in str(content):
+                    print("dentro facturas")
                     grf = Graph()
                     gpedidos = cargar_grafo_turtle(AgentUtil.Agents.path_pedidos)
                     gclientes = cargar_grafo_turtle(AgentUtil.Agents.path_clientes)
                     gfacturasPrevias = cargar_grafo_turtle(AgentUtil.Agents.path_facturas_previas)
                     email = gm.value(subject=content, predicate=ECSDI.email)
+                    print("email" + email)
 
                     for sujetoCliente in gclientes.subjects(predicate=ECSDI.email, object=email):
+                        print("dentro for clientes")
                         for pedidoCliente in gpedidos.subjects(predicate=ECSDI.realizada_por, object=sujetoCliente):
+                            print("dentro for pedidos")
                             for facturaCliente in gfacturasPrevias.subjects(predicate=ECSDI.pertenece_a, object=pedidoCliente):
+                                print("dentro for facturas")
                                 codigo = gfacturasPrevias.value(subject=facturaCliente, predicate=ECSDI.codigo)
+                                print("codigo " + str(codigo))
                                 clase = gfacturasPrevias.value(subject=facturaCliente, predicate=RDF.type)
                                 grf.add((facturaCliente, RDF.type, Literal(clase)))
                                 grf.add((facturaCliente, ECSDI.codigo, Literal(codigo)))
 
                     gr = build_message(grf, ACL.inform, sender=AgentUtil.Agents.AgenteInformador.uri)
                 if 'obtenerFacturaPrevia' in str(content):
+                    print("dentro factura")
                     grf = Graph()
                     gpedidos = cargar_grafo_turtle(AgentUtil.Agents.path_pedidos)
                     gclientes = cargar_grafo_turtle(AgentUtil.Agents.path_clientes)
                     gfacturasPrevias = cargar_grafo_turtle(AgentUtil.Agents.path_facturas_previas)
+
+                    print("-------------------------------------")
+                    for suje, pred, obj in gfacturasPrevias:
+                        print("dentro for prueba")
+                        print("sujeto " + suje)
+                        print("predicado " + pred)
+                        print("objeto " + obj)
+
                     codigoFactura = gm.value(subject=content, predicate=ECSDI.codigo)
 
-                    for facturaPrevia in gfacturasPrevias.subjects(predicate=ECSDI.codigo, object=codigoFactura):
-                        pedido = gfacturasPrevias.value(subject=facturaPrevia, predicate=ECSDI.pertence_a)
-                        clasePedido = gpedidos.value(subject=ob, predicate=RDF.type)
-                        prioridad = gpedidos.value(pedido, ECSDI.prioridad)
+                    codigoFactura1 = int(codigoFactura)
+
+
+                    for facturaPrevia in gfacturasPrevias.subjects(predicate=ECSDI.codigo, object=Literal(codigoFactura1)):
+                    # for facturaPrevia, predi, obje in gfacturasPrevias1.triples((None, ECSDI.codigo, Literal(codigoFactura))):
+                        print("dentro for facturas")
+                        pedido = gfacturasPrevias.value(subject=facturaPrevia, predicate=ECSDI.pertenece_a)
+                        clasePedido = gpedidos.value(subject=pedido, predicate=RDF.type)
+                        prioridad = gpedidos.value(subject=pedido, predicate=ECSDI.prioridad)
+                        print("prioridad "+ str(prioridad))
                         grf.add((pedido, RDF.type, Literal(clasePedido)))
                         grf.add((pedido, ECSDI.prioridad, Literal(prioridad)))
                         for s, p, o in gpedidos.triples((pedido, ECSDI.compuesto_de, None)):
+                            print("dentro for pedidos")
                             gbultos = cargar_grafo_turtle(AgentUtil.Agents.path_bultos)
                             for su, pd, ob in gbultos.triples((o, ECSDI.compuesto_por, None)):
+                                print("dentro for bultos")
                                 gproductos = cargar_grafo_turtle(AgentUtil.Agents.path_productos)
                                 codigo = gproductos.value(subject=ob, predicate=ECSDI.codigo)
                                 nombre = gproductos.value(subject=ob, predicate=ECSDI.nombre)
+                                print("nombre producto " + nombre)
                                 precio = gproductos.value(subject=ob, predicate=ECSDI.precio)
                                 descripcion = gproductos.value(subject=ob, predicate=ECSDI.descripcion)
                                 tipo = gproductos.value(subject=ob, predicate=ECSDI.tipo)

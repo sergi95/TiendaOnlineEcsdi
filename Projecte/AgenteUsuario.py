@@ -328,26 +328,29 @@ def verFacturasPrevias():
                         receiver=AgentUtil.Agents.AgenteInformador.uri,
                         content=content)
 
-    gr = send_message(msg, AgentUtil.Agents.AgenteDistribuidorBultos.address)
+    gr = send_message(msg, AgentUtil.Agents.AgenteInformador.address)
 
     msgdic = get_message_properties(gr)
     perf = msgdic['performative']
+
     if (perf == ACL.inform):
         msg = "ok"
-        list = []
+        print("ok dentro")
+        l = []
 
         for sujeto in gr.subjects(predicate=RDF.type, object=Literal('FacturaPrevia')):
             # Anadimos los atributos que queremos renderizar a la vista
             print("dentro for")
 
             codigo = gr.value(subject=sujeto, predicate=ECSDI.codigo)
-            list = list + [codigo]
+            l.append(codigo)
 
     else:
+        print("bad rquest")
         msg = "error mensaje"
 
     # Renderizamos la vista
-    return render_template('listadoFacturasPrevias.html', list=list, msg=msg)
+    return render_template('listadoFacturasPrevias.html', list=l, msg=msg)
 
 
 @app.route("/mostrarFacturaPrevia")
@@ -365,7 +368,7 @@ def mostrarFacturaPrevia():
                         receiver=AgentUtil.Agents.AgenteInformador.uri,
                         content=content)
 
-    gr = send_message(msg, AgentUtil.Agents.AgenteDistribuidorBultos.address)
+    gr = send_message(msg, AgentUtil.Agents.AgenteInformador.address)
 
     msgdic = get_message_properties(gr)
     perf = msgdic['performative']
@@ -375,7 +378,7 @@ def mostrarFacturaPrevia():
 
         for sujeto in gr.subjects(predicate=RDF.type, object=Literal('ProductoPropio')):
 
-            print("dentro for")
+            print("dentro for productos")
 
             datosProd = {}
             datosProd['codigo'] = gr.value(subject=sujeto, predicate=ECSDI.codigo)
@@ -388,15 +391,18 @@ def mostrarFacturaPrevia():
             list = list + [datosProd]
         l = sorted(list, key=itemgetter('codigo'))
         for pedido in gr.subjects(predicate=RDF.type, object=Literal('Pedido')):
+            print("dentro for pedido")
             datosProd = {}
-
-            datosProd['prioridadPedido'] = gr.value(subject=pedido, predicate=ECSDI.prioridad)
+            prioridad = gr.value(subject=pedido, predicate=ECSDI.prioridad)
+            print("prioridad " + str(prioridad))
+            # datosProd['prioridadPedido'] = gr.value(subject=pedido, predicate=ECSDI.prioridad)
+            datosProd['prioridadPedido'] = int(prioridad)
             l = l + [datosProd]
     else:
         msg = "error mensaje"
 
     # Renderizamos la vista
-    return render_template('mostrarFacturaPrevia.html', list=list, msg=msg)
+    return render_template('mostrarFacturaPrevia.html', list=l, msg=msg)
 
 
 @app.route("/comm")

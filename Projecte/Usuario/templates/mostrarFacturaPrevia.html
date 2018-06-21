@@ -6,7 +6,7 @@
 </head>
 <body>
     {% if msg == "ok" %}
-        <h1>Resultados a la búsqueda de {{ tipo }} con calidad {{ calidad }} y valoración igual o superior a {{ valMin }}</h1>
+        <h1>Información factura previa:</h1>
         {% if list %}
             <table>
                 <tbody>
@@ -39,7 +39,15 @@
                     <tr>
                         {% for key,value in elem.items() %}
                             {% if key == 'prioridadPedido' %}
-                                <td>{{ value }}</td>
+                                {% if value == 1 %}
+                                    <td>Envio en 1 dia</td>
+                                {% endif %}
+                                {% if value == 2 %}
+                                    <td>Envio de 2 a 3 dias</td>
+                                {% endif %}
+                                {% if value == 3 %}
+                                    <td>Cuando llegue</td>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     </tr>

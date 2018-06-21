@@ -4,9 +4,17 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ecsdi:Bulto695700859199 a "BultoEnvio" ;
-    ecsdi:asignado_a ecsdi:CentroLogistico2 ;
-    ecsdi:codigo 695700859199 ;
-    ecsdi:compuesto_por ecsdi:Producto5 ;
+ecsdi:Bulto256126760468 a "BultoEnvio" ;
+    ecsdi:asignado_a ecsdi:CentroLogistico1 ;
+    ecsdi:codigo 256126760468 ;
+    ecsdi:compuesto_por ecsdi:Producto1,
+        ecsdi:Producto70 ;
+    ecsdi:estado 1 .
+
+ecsdi:Bulto580953728840 a "BultoEnvio" ;
+    ecsdi:asignado_a ecsdi:CentroLogistico4 ;
+    ecsdi:codigo 580953728840 ;
+    ecsdi:compuesto_por ecsdi:Producto47,
+        ecsdi:Producto63 ;
     ecsdi:estado 1 .
 

@@ -4,9 +4,10 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ecsdi:Pedido491049704068 a "Pedido" ;
-    ecsdi:codigo 491049704068 ;
-    ecsdi:compuesto_de ecsdi:Bulto695700859199 ;
+ecsdi:Pedido998967957891 a "Pedido" ;
+    ecsdi:codigo 998967957891 ;
+    ecsdi:compuesto_de ecsdi:Bulto256126760468,
+        ecsdi:Bulto580953728840 ;
     ecsdi:estado 1 ;
     ecsdi:prioridad "1" ;
     ecsdi:realizada_por <http://www.semanticweb.org/usuario/ontologies/2018/4/ecsdi#Clientemanel@gmail.com> .
