@@ -28,7 +28,7 @@ from AgentUtil.Agent import Agent
 import AgentUtil.Agents
 from AgentUtil.ACLMessages import build_message, send_message, get_message_properties
 from AgentUtil.OntoNamespaces import ACL, ECSDI
-
+from AgentUtil.ConsistenciaUtil import cargar_grafo_turtle
 
 # Contador de mensajes
 mss_cnt = 0
@@ -50,7 +50,83 @@ def comunicacion():
     """
     global dsgraph
     global mss_cnt
-    pass
+    message = request.args['content']
+    print("requestargs")
+    print(request.args['content'])
+    gm = Graph()
+    gm.parse(data=message)
+    gr = None
+
+    msgdic = get_message_properties(gm)
+    if msgdic is None:
+        gr = build_message(Graph(), ACL['not-understood'], sender=AgentUtil.Agents.AgenteInformador.uri,
+                           msgcnt=mss_cnt)
+    else:
+        perf = msgdic['performative']
+        if perf == ACL.request:
+            if 'content' in msgdic:
+                content = msgdic['content']
+                if 'obtenerFacturasPrevias' in str(content):
+                    grf = Graph()
+                    gpedidos = cargar_grafo_turtle(AgentUtil.Agents.path_pedidos)
+                    gclientes = cargar_grafo_turtle(AgentUtil.Agents.path_clientes)
+                    gfacturasPrevias = cargar_grafo_turtle(AgentUtil.Agents.path_facturas_previas)
+                    email = gm.value(subject=content, predicate=ECSDI.email)
+
+                    for sujetoCliente in gclientes.subjects(predicate=ECSDI.email, object=email):
+                        for pedidoCliente in gpedidos.subjects(predicate=ECSDI.realizada_por, object=sujetoCliente):
+                            for facturaCliente in gfacturasPrevias.subjects(predicate=ECSDI.pertenece_a, object=pedidoCliente):
+                                codigo = gfacturasPrevias.value(subject=facturaCliente, predicate=ECSDI.codigo)
+                                clase = gfacturasPrevias.value(subject=facturaCliente, predicate=RDF.type)
+                                grf.add((facturaCliente, RDF.type, Literal(clase)))
+                                grf.add((facturaCliente, ECSDI.codigo, Literal(codigo)))
+
+                    gr = build_message(grf, ACL.inform, sender=AgentUtil.Agents.AgenteInformador.uri)
+                if 'obtenerFacturaPrevia' in str(content):
+                    grf = Graph()
+                    gpedidos = cargar_grafo_turtle(AgentUtil.Agents.path_pedidos)
+                    gclientes = cargar_grafo_turtle(AgentUtil.Agents.path_clientes)
+                    gfacturasPrevias = cargar_grafo_turtle(AgentUtil.Agents.path_facturas_previas)
+                    codigoFactura = gm.value(subject=content, predicate=ECSDI.codigo)
+
+                    for facturaPrevia in gfacturasPrevias.subjects(predicate=ECSDI.codigo, object=codigoFactura):
+                        pedido = gfacturasPrevias.value(subject=facturaPrevia, predicate=ECSDI.pertence_a)
+                        clasePedido = gpedidos.value(subject=ob, predicate=RDF.type)
+                        prioridad = gpedidos.value(pedido, ECSDI.prioridad)
+                        grf.add((pedido, RDF.type, Literal(clasePedido)))
+                        grf.add((pedido, ECSDI.prioridad, Literal(prioridad)))
+                        for s, p, o in gpedidos.triples((pedido, ECSDI.compuesto_de, None)):
+                            gbultos = cargar_grafo_turtle(AgentUtil.Agents.path_bultos)
+                            for su, pd, ob in gbultos.triples((o, ECSDI.compuesto_por, None)):
+                                gproductos = cargar_grafo_turtle(AgentUtil.Agents.path_productos)
+                                codigo = gproductos.value(subject=ob, predicate=ECSDI.codigo)
+                                nombre = gproductos.value(subject=ob, predicate=ECSDI.nombre)
+                                precio = gproductos.value(subject=ob, predicate=ECSDI.precio)
+                                descripcion = gproductos.value(subject=ob, predicate=ECSDI.descripcion)
+                                tipo = gproductos.value(subject=ob, predicate=ECSDI.tipo)
+                                valoracion = gproductos.value(subject=ob, predicate=ECSDI.valoracion)
+                                calidad = gproductos.value(subject=ob, predicate=ECSDI.calidad)
+                                clase = gproductos.value(subject=ob, predicate=RDF.type)
+                                grf.add((ob, RDF.type, Literal(clase)))
+                                grf.add((ob, ECSDI.codigo, Literal(codigo)))
+                                grf.add((ob, ECSDI.nombre, Literal(nombre)))
+                                grf.add((ob, ECSDI.precio, Literal(precio)))
+                                grf.add((ob, ECSDI.descripcion, Literal(descripcion)))
+                                grf.add((ob, ECSDI.tipo, Literal(tipo)))
+                                grf.add((ob, ECSDI.valoracion, Literal(valoracion)))
+                                grf.add((ob, ECSDI.calidad, Literal(calidad)))
+                    gr = build_message(grf, ACL.inform, sender=AgentUtil.Agents.AgenteInformador.uri)
+
+            else:
+                gr = build_message(Graph(), ACL['not-understood'], sender=AgentUtil.Agents.AgenteInformador.uri,
+                                   msgcnt=mss_cnt)
+    print("grafo")
+    print(gr)
+    # for sujeto in gr.subjects(predicate=ECSDI.tipo, object=Literal(criterios)):
+    #     print("dentro chivato")
+    #     variable = gr.value(subject=sujeto, predicate=ECSDI.nombre)
+    #     print(variable)
+    return gr.serialize(format='xml')
 
 
 @app.route("/Stop")

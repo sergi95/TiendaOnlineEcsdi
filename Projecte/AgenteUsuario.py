@@ -290,6 +290,8 @@ def realizarPedido():
     # graf amb tots els productes relacionats amb el criteri de busqueda
     gr = send_message(msg, AgentUtil.Agents.AgenteDistribuidorBultos.address)
 
+
+
     msgdic = get_message_properties(gr)
     perf = msgdic['performative']
     if (perf == ACL.agree):
@@ -309,6 +311,92 @@ def realizarPedido():
     # guardarCarrito(gcarrito)
 
     return render_template('mensajePedidoEnviado.html', mensaje=mensaje)
+
+
+@app.route("/verFacturasPrevias")
+def verFacturasPrevias():
+    dicreq = request.args
+    email = dicreq['email']
+
+    gm = Graph()
+    gm.bind('ecsdi', ECSDI)
+    content = ECSDI['obtenerFacturasPrevias']
+    gm.add((content, ECSDI.email, Literal(email)))
+
+    msg = build_message(gm, perf=ACL.request,
+                        sender=AgentUtil.Agents.AgenteUsuario.uri,
+                        receiver=AgentUtil.Agents.AgenteInformador.uri,
+                        content=content)
+
+    gr = send_message(msg, AgentUtil.Agents.AgenteDistribuidorBultos.address)
+
+    msgdic = get_message_properties(gr)
+    perf = msgdic['performative']
+    if (perf == ACL.inform):
+        msg = "ok"
+        list = []
+
+        for sujeto in gr.subjects(predicate=RDF.type, object=Literal('FacturaPrevia')):
+            # Anadimos los atributos que queremos renderizar a la vista
+            print("dentro for")
+
+            codigo = gr.value(subject=sujeto, predicate=ECSDI.codigo)
+            list = list + [codigo]
+
+    else:
+        msg = "error mensaje"
+
+    # Renderizamos la vista
+    return render_template('listadoFacturasPrevias.html', list=list, msg=msg)
+
+
+@app.route("/mostrarFacturaPrevia")
+def mostrarFacturaPrevia():
+    dicreq = request.args
+    codigo = dicreq['codigo']
+
+    gm = Graph()
+    gm.bind('ecsdi', ECSDI)
+    content = ECSDI['obtenerFacturaPrevia']
+    gm.add((content, ECSDI.codigo, Literal(codigo)))
+
+    msg = build_message(gm, perf=ACL.request,
+                        sender=AgentUtil.Agents.AgenteUsuario.uri,
+                        receiver=AgentUtil.Agents.AgenteInformador.uri,
+                        content=content)
+
+    gr = send_message(msg, AgentUtil.Agents.AgenteDistribuidorBultos.address)
+
+    msgdic = get_message_properties(gr)
+    perf = msgdic['performative']
+    if (perf == ACL.inform):
+        msg = "ok"
+        list = []
+
+        for sujeto in gr.subjects(predicate=RDF.type, object=Literal('ProductoPropio')):
+
+            print("dentro for")
+
+            datosProd = {}
+            datosProd['codigo'] = gr.value(subject=sujeto, predicate=ECSDI.codigo)
+            datosProd['nombre'] = gr.value(subject=sujeto, predicate=ECSDI.nombre)
+            datosProd['precio'] = gr.value(subject=sujeto, predicate=ECSDI.precio)
+            datosProd['descripcion'] = gr.value(subject=sujeto, predicate=ECSDI.descripcion)
+            datosProd['tipo'] = gr.value(subject=sujeto, predicate=ECSDI.tipo)
+            datosProd['valoracion'] = gr.value(subject=sujeto, predicate=ECSDI.valoracion)
+            datosProd['calidad'] = gr.value(subject=sujeto, predicate=ECSDI.calidad)
+            list = list + [datosProd]
+        l = sorted(list, key=itemgetter('codigo'))
+        for pedido in gr.subjects(predicate=RDF.type, object=Literal('Pedido')):
+            datosProd = {}
+
+            datosProd['prioridadPedido'] = gr.value(subject=pedido, predicate=ECSDI.prioridad)
+            l = l + [datosProd]
+    else:
+        msg = "error mensaje"
+
+    # Renderizamos la vista
+    return render_template('mostrarFacturaPrevia.html', list=list, msg=msg)
 
 
 @app.route("/comm")

@@ -163,6 +163,13 @@ def comunicacion():
                 gbultosTotales += gbultos
                 guardar_grafo_turtle(gbultosTotales, AgentUtil.Agents.path_bultos)
 
+                gfacturas = cargar_grafo_turtle(AgentUtil.Agents.path_facturas_previas)
+                codigoFactura = random.randint(0, 999999999999)
+                gfacturas.add((ECSDI['Factura' + str(codigoFactura)], RDF.type, Literal('FacturaPrevia')))
+                gfacturas.add((ECSDI['Factura' + str(codigoFactura)], ECSDI.codigo, Literal(codigoFactura)))
+                gfacturas.add((ECSDI['Factura' + str(codigoFactura)], ECSDI.pertence_a, ECSDI['Pedido' + str(codigoPedido)]))
+                guardar_grafo_turtle(gfacturas, AgentUtil.Agents.path_facturas_previas)
+
                 gr = build_message(Graph(), ACL.agree, sender=AgentUtil.Agents.AgenteDistribuidorBultos.uri)
             else:
                 gr = build_message(Graph(), ACL['not-understood'], sender=AgentUtil.Agents.AgenteDistribuidorBultos.uri,

@@ -11,14 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AgenteEscritura.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AgenteEscritura.py">
+      <file leaf-file-name="AgenteInformador.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AgenteInformador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="144" column="106" lean-forward="true" selection-start-line="144" selection-start-column="106" selection-end-line="144" selection-end-column="106" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="95" column="70" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -26,35 +23,8 @@
       <file leaf-file-name="AgenteBusquedas.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AgenteBusquedas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buscarProductos.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Usuario/templates/buscarProductos.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgenteDistribuidorBultos.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AgenteDistribuidorBultos.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="148" column="69" lean-forward="true" selection-start-line="148" selection-start-column="69" selection-end-line="148" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verCarrito.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Usuario/templates/verCarrito.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="52" column="46" lean-forward="true" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+            <state relative-caret-position="525">
+              <caret line="107" column="76" lean-forward="true" selection-start-line="100" selection-start-column="24" selection-end-line="107" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -62,8 +32,8 @@
       <file leaf-file-name="AgenteUsuario.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AgenteUsuario.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-195">
-              <caret line="230" column="4" selection-start-line="230" selection-start-column="4" selection-end-line="230" selection-end-column="4" />
+            <state relative-caret-position="668">
+              <caret line="398" column="75" lean-forward="true" selection-start-line="398" selection-start-column="75" selection-end-line="398" selection-end-column="75" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -71,11 +41,47 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mostrarFacturaPrevia.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Usuario/templates/mostrarFacturaPrevia.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listadoFacturasPrevias.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Usuario/templates/listadoFacturasPrevias.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="resultadoBusqueda.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Usuario/templates/resultadoBusqueda.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="37" column="131" selection-start-line="37" selection-start-column="131" selection-end-line="37" selection-end-column="131" />
+            <state relative-caret-position="825">
+              <caret line="58" column="9" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="58" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buscarProductos.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Usuario/templates/buscarProductos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="11" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="37" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgenteDistribuidorBultos.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AgenteDistribuidorBultos.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="170" column="87" lean-forward="true" selection-start-line="170" selection-start-column="87" selection-end-line="170" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -86,8 +92,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -100,25 +106,27 @@
         <option value="$PROJECT_DIR$/AgentUtil/OntoNamespaces.py" />
         <option value="$PROJECT_DIR$/AgenteCentroLogistico.py" />
         <option value="$PROJECT_DIR$/AgenteGestorDevoluciones.py" />
-        <option value="$PROJECT_DIR$/AgenteInformador.py" />
         <option value="$PROJECT_DIR$/AgenteMejorarProcesos.py" />
         <option value="$PROJECT_DIR$/AgenteProductos.py" />
         <option value="$PROJECT_DIR$/AgenteTransacciones.py" />
         <option value="$PROJECT_DIR$/AgenteTransportista.py" />
         <option value="$PROJECT_DIR$/AgenteVendedor3o.py" />
         <option value="$PROJECT_DIR$/AgenteLectura.py" />
-        <option value="$PROJECT_DIR$/Usuario/templates/main.html" />
         <option value="$PROJECT_DIR$/Usuario/templates/mensajePedidoEnviado.html" />
         <option value="$PROJECT_DIR$/AgentUtil/ConsistenciaUtil.py" />
-        <option value="$PROJECT_DIR$/AgentUtil/Agents.py" />
         <option value="$PROJECT_DIR$/pruebas.py" />
-        <option value="$PROJECT_DIR$/AgenteDistribuidorBultos.py" />
         <option value="$PROJECT_DIR$/AgenteBusquedas.py" />
         <option value="$PROJECT_DIR$/Usuario/templates/buscarProductos.html" />
         <option value="$PROJECT_DIR$/Usuario/templates/verCarrito.html" />
         <option value="$PROJECT_DIR$/Usuario/templates/resultadoBusqueda.html" />
-        <option value="$PROJECT_DIR$/AgenteUsuario.py" />
         <option value="$PROJECT_DIR$/AgenteEscritura.py" />
+        <option value="$PROJECT_DIR$/AgentUtil/Agents.py" />
+        <option value="$PROJECT_DIR$/AgenteDistribuidorBultos.py" />
+        <option value="$PROJECT_DIR$/Usuario/templates/main.html" />
+        <option value="$PROJECT_DIR$/AgenteInformador.py" />
+        <option value="$PROJECT_DIR$/Usuario/templates/listadoFacturasPrevias.html" />
+        <option value="$PROJECT_DIR$/AgenteUsuario.py" />
+        <option value="$PROJECT_DIR$/Usuario/templates/mostrarFacturaPrevia.html" />
       </list>
     </option>
   </component>
@@ -282,29 +290,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/AgentUtil/Agents.py</url>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AgenteUsuario.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="79" column="75" selection-start-line="79" selection-start-column="75" selection-end-line="79" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AgentUtil/Agents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AgentUtil/Agents.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -453,13 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AgenteInformador.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="90" column="81" selection-start-line="90" selection-start-column="81" selection-end-line="90" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AgenteMejorarProcesos.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -533,16 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AgentUtil/Agents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AgentUtil/ConsistenciaUtil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -553,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Usuario/templates/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Usuario/templates/elegirOpcion.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -567,37 +532,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Usuario/templates/verCarrito.html">
+    <entry file="file://$PROJECT_DIR$/AgentUtil/Agents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="52" column="46" lean-forward="true" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Usuario/templates/buscarProductos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Usuario/templates/resultadoBusqueda.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="37" column="131" selection-start-line="37" selection-start-column="131" selection-end-line="37" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AgenteDistribuidorBultos.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="148" column="69" lean-forward="true" selection-start-line="148" selection-start-column="69" selection-end-line="148" selection-end-column="69" />
+        <state relative-caret-position="600">
+          <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AgenteEscritura.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="360">
           <caret line="144" column="106" lean-forward="true" selection-start-line="144" selection-start-column="106" selection-end-line="144" selection-end-column="106" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -605,17 +552,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Usuario/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="59" lean-forward="true" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usuario/templates/verCarrito.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="11" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="38" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usuario/templates/buscarProductos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="11" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AgenteDistribuidorBultos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="170" column="87" lean-forward="true" selection-start-line="170" selection-start-column="87" selection-end-line="170" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AgenteBusquedas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="98" column="71" selection-start-line="98" selection-start-column="71" selection-end-line="98" selection-end-column="71" />
+        <state relative-caret-position="525">
+          <caret line="107" column="76" lean-forward="true" selection-start-line="100" selection-start-column="24" selection-end-line="107" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usuario/templates/listadoFacturasPrevias.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usuario/templates/resultadoBusqueda.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AgenteInformador.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="95" column="70" selection-start-line="95" selection-start-column="70" selection-end-line="95" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usuario/templates/mostrarFacturaPrevia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AgenteUsuario.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="230" column="4" selection-start-line="230" selection-start-column="4" selection-end-line="230" selection-end-column="4" />
+        <state relative-caret-position="668">
+          <caret line="398" column="75" lean-forward="true" selection-start-line="398" selection-start-column="75" selection-end-line="398" selection-end-column="75" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factura Previa</title>
+</head>
+<body>
+    {% if msg == "ok" %}
+        <h1>Resultados a la búsqueda de {{ tipo }} con calidad {{ calidad }} y valoración igual o superior a {{ valMin }}</h1>
+        {% if list %}
+            <table>
+                <tbody>
+                    <tr>
+                        <td><b>Tipo</b></td>
+                        <td><b>Precio</b></td>
+                        <td><b>Calidad</b></td>
+                        <td><b>Descripción</b></td>
+                        <td><b>Nombre</b></td>
+                        <td><b>Código</b></td>
+                        <td><b>Valoración</b></td>
+                    </tr>
+                    {% for elem in list %}
+                    <tr>
+                        {% for key,value in elem.items() %}
+                            {% if key != 'prioridadPedido' %}
+                                <td>{{ value }}</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><b>Prioridad Pedido</b></td>
+                    </tr>
+                    {% for elem in list %}
+                    <tr>
+                        {% for key,value in elem.items() %}
+                            {% if key == 'prioridadPedido' %}
+                                <td>{{ value }}</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <h2>No hay elementos en la lista</h2>
+        {% endif %}
+    {% else %}
+        <h1>Mensaje Incorrecto</h1>
+    {% endif %}
+    <ul>
+        <li>
+            <a href="/">Ir a la página principal</a>
+        </li>
+        <li>
+            <a href="/buscar">Realizar búsqueda</a>
+        </li>
+        <li>
+            <a href="/verCarrito">Ver carrito</a>
+        </li>
+    </ul>
+</body>
+</html>

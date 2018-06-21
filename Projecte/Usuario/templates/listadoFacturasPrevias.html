@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facturas Previas</title>
+</head>
+<body>
+    {% if msg == "ok" %}
+        <h1>Facturas previas:</h1>
+        {% if list %}
+            <table>
+                <tbody>
+                    {% for elem in list %}
+                    <tr>
+                        <td><a href="/mostrarFacturaPrevia?codigo={{ elem }}">Factura {{ elem }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <h2>No hay elementos en la lista</h2>
+        {% endif %}
+    {% else %}
+        <h1>Mensaje Incorrecto</h1>
+    {% endif %}
+    <ul>
+        <li>
+            <a href="/">Ir a la página principal</a>
+        </li>
+        <li>
+            <a href="/buscar">Realizar búsqueda</a>
+        </li>
+        <li>
+            <a href="/verCarrito">Ver carrito</a>
+        </li>
+    </ul>
+</body>
+</html>

@@ -38,6 +38,7 @@ path_pedidos = 'Datos/pedidos'
 path_bultos = 'Datos/bultos'
 path_feedbacks = 'Datos/feedbacks'
 path_centrosLogisticos = 'Datos/centrosLogisticos'
+path_facturas_previas = 'Datos/facturasPrevias'
 
 
 
