@@ -20,7 +20,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgenteUsuario.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AgenteUsuario.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AgenteUsuario.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2663">
@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mostrarFacturaPrevia.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mostrarFacturaPrevia.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Usuario/templates/mostrarFacturaPrevia.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="443">
+              <caret line="45" column="64" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -112,8 +112,8 @@
         <option value="$PROJECT_DIR$/Usuario/templates/listadoFacturasPrevias.html" />
         <option value="$PROJECT_DIR$/AgenteDistribuidorBultos.py" />
         <option value="$PROJECT_DIR$/AgenteInformador.py" />
-        <option value="$PROJECT_DIR$/Usuario/templates/mostrarFacturaPrevia.html" />
         <option value="$PROJECT_DIR$/AgenteUsuario.py" />
+        <option value="$PROJECT_DIR$/Usuario/templates/mostrarFacturaPrevia.html" />
       </list>
     </option>
   </component>
@@ -586,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Usuario/templates/mostrarFacturaPrevia.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AgenteUsuario.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2663">
@@ -600,6 +593,13 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usuario/templates/mostrarFacturaPrevia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="45" column="64" lean-forward="true" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
         </state>
       </provider>
     </entry>
